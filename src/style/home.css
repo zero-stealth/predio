@@ -1,0 +1,60 @@
+@media screen {
+
+  .desk-show {
+    display: none;
+  }
+
+
+
+  .home-container {
+    height: 100%;
+  }
+
+
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+
+  .desk-show {
+    display: flex;
+  }
+
+  .mobile-show {
+    display: none;
+  }
+
+  .mobilenav-layout {
+    display: none;
+  }
+
+  .layout {
+    gap: 20px;
+    height: 90%;
+    display: flex;
+    padding: 15px;
+  }
+
+  .league-layout {
+    flex: 20%;
+    border-radius:20px;
+    background-color:  var(--dark-primary-color);
+  }
+  
+  .main-layout{
+    flex: 55%;
+    overflow-y: auto;
+    overflow: hidden;
+    border-radius:20px;
+    overflow-x: hidden;
+  }
+
+  .news-layout {
+    flex: 25%;
+    overflow-y: auto;
+    overflow: hidden;
+    border-radius:20px;
+    overflow-x: hidden;
+    background-color:  var(--dark-primary-color);
+  }
+}

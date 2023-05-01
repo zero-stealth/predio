@@ -1,0 +1,27 @@
+@media screen {
+  .mobile-container {
+    width: 95%;
+    bottom: 10px;
+    display: flex;
+    position: fixed;
+    padding: 15px 20px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dark-primary-color);
+  }
+
+  .mobile-icon-link {
+    width: 24px;
+    height: 24px;
+    fill: var(--light-color);
+  }
+
+  .router-link-active .mobile-icon-link {
+    fill: var(--secondary-color);
+  }
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+}

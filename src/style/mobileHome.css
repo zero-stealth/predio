@@ -1,0 +1,120 @@
+@media screen {
+  .background-layout {
+    top: 0;
+    height: 50%;
+    width: 100%;
+    z-index: -1000;
+    position: absolute;
+    border-radius: 0 0 20px 20px;
+    background-color: var(--tertiary-color);
+  }
+
+  .m-home-container {
+    gap: 30px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .m-home-nav {
+    width: 100%;
+    display: flex;
+    padding-top: 20%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .m-home-greeting {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    color: var(--light-color);
+  }
+
+  .m-home-greeting h1 {
+    font-size: 1.2rem;
+  }
+
+  .m-home-greeting h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+  }
+
+  .m-home-p-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    border-radius: 360%;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+  }
+
+  .m-home-profile-icon {
+    width: 30px;
+    height: 30px;
+    fill: var(--secondary-color);
+  }
+
+  .m-home-p-img {
+    width: 80px;
+    height: 80px;
+    /* object-fit: cover; */
+    border-radius: 360%;
+    /* object-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .m-sport-selection {
+    gap: 10px;
+    padding: 20px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    overflow-y: auto;
+    max-height: 300px;
+    overflow-x: hidden;
+    border-radius: 20px;
+    color: var(--light-color);
+    justify-content: space-between;
+    background-color: var(--dark-primary-color);
+  }
+
+  .m-sport-link {
+    gap: 10px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .m-sport-link span {
+    font-size: 0.8rem;
+  }
+
+  .m-sport-link:hover span {
+    color: var(--secondary-color);
+  }
+
+  .m-sport-link:hover .m-sport-icon {
+    fill: var(--secondary-color);
+  }
+
+  .m-sport-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--light-color);
+  }
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  
+}

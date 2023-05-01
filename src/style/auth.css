@@ -1,0 +1,103 @@
+@media screen {
+  .background-layout {
+    height: 50%;
+    width: 100%;
+    z-index: -1000;
+    position: absolute;
+    border-radius: 20px 20px 0 0;
+    background-color: var(--tertiary-color);
+  }
+
+  .flip {
+    bottom: 0;
+  }
+
+  .flop{
+    top: 0;
+    transform: rotate(180deg);
+
+  }
+
+  .auth-main {
+    height: 100%;
+  }
+
+  .auth-img {
+    display: none;
+  }
+
+  .auth-info {
+    gap: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .auth-info {
+    padding: 20px;
+  }
+
+  .auth-type {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+  }
+
+  .auth-btn {
+    background-color: transparent;
+    color: var(--light-color);
+    padding: 20px 40px;
+    font-size: 1rem;
+  }
+
+  .auth-btn:hover {
+    color: var( --secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+  }
+
+  .active {
+    color: var( --secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+  }
+
+  .dull {
+    color: var(--light-color);
+    border-bottom: 2px solid var(--light-color);
+  }
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+
+  .auth-main {
+    gap: 20px;  
+    display: flex;
+    padding: 20px;
+  }
+
+  .auth-img {
+    flex: 20%;
+    height: 100%;
+    display: flex;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 4px solid var(--tertiary-color);
+  }
+  
+  
+  .flip {
+    bottom: 0;
+  }
+
+  .auth-info {
+    flex: 50%;
+    height: 100%;
+    padding: 250px;
+
+  }
+}

@@ -1,0 +1,45 @@
+@media screen {
+  .ad-container {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    background-position: center center;
+  }
+
+  .ad-info {
+    gap: 10px;
+    flex: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ad-info h1 {
+    font-size: 1.5rem;
+  }
+
+  .ad-btn {
+    width: 50%;
+    padding: 10px;
+    font-size: .8rem;
+    border-radius: 20px;
+    color: var(--primary-color);
+    background-color: var( --background-color);
+  }
+
+  .ad-img {
+    flex: 50%;
+
+    background-size: cover;
+    border-radius: inherit;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+}
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+}
