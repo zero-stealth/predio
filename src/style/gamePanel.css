@@ -165,9 +165,12 @@
   }
 
   .game-score {
+    display: flex;
     font-size: .8rem;
     padding: 2px 20px;
     border-radius: 4px;
+    align-items: center;
+    justify-content: center;
     color: var(--secondary-color);
   }
 
