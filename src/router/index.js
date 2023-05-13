@@ -25,8 +25,19 @@ const router = createRouter({
       component: () => import('../views/AdminView.vue')
     },
     {
-      path: '/ss',
+      path: '/how-to-pay',
+      name: 'Pay',
+      component: () => import('../views/PayView.vue')
+    },
+    {
+      path: '/vip-access',
+      name: 'Vip',
+      component: () => import('../views/VipView.vue')
+    },
+    {
+      path: '/live',
       name: 'Details',
+      params: true,
       component: () => import('../views/DetailsView.vue')
     },
     {
@@ -45,7 +56,7 @@ const router = createRouter({
       component: () => import('../views/NewsView.vue')
     },
     {
-      path: '/upcoming',
+      path: '/Prediction',
       name: 'Upcoming',
       component: () => import('../views/Upcoming.vue')
     },

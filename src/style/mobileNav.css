@@ -1,9 +1,10 @@
 @media screen {
   .mobile-container {
     width: 95%;
-    bottom: 10px;
+    bottom: 0;
     display: flex;
-    position: fixed;
+    margin: 10px 0;
+    position: relative;
     padding: 15px 20px;
     border-radius: 50px;
     align-items: center;

@@ -20,7 +20,6 @@ import pic from '@/assets/basketball.png'
           <span>time</span>
         </div>
       </div>
-      
     </div>
   </div>
 </template>

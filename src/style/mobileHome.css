@@ -17,10 +17,20 @@
     flex-direction: column;
   }
 
+  .m-home-menu {
+    padding-top: 20px;
+  }
+
+  .menu-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    fill:  var( --light-color);
+  }
+
   .m-home-nav {
     width: 100%;
     display: flex;
-    padding-top: 20%;
     align-items: center;
     justify-content: space-between;
   }
@@ -53,6 +63,7 @@
     border: 2px solid var(--secondary-color);
   }
 
+  
   .m-home-profile-icon {
     width: 30px;
     height: 30px;
@@ -72,7 +83,6 @@
 
   .m-sport-selection {
     gap: 10px;
-    padding: 20px;
     height: 300px;
     display: flex;
     flex-wrap: wrap;
@@ -108,8 +118,8 @@
   }
 
   .m-sport-icon {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
     fill: var(--light-color);
   }
 }

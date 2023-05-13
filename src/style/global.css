@@ -1,3 +1,5 @@
+@import './stylesheet.css';
+
 @media screen {
   * {
     /* default-colors  */
@@ -15,8 +17,14 @@
   }
 
   body {
+    font-weight: 300;
+    font-family: 'Poppins';
     color: var(--background-color);
     background-color: var(--primary-color);
+  }
+
+  h1, h2 {
+    font-weight: 500;
   }
 
   input {
@@ -27,7 +35,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }  
+  }
 
   a {
     text-decoration: none;
@@ -38,12 +46,21 @@
     outline: none;
     cursor: pointer;
   }
+
+  .desk-show {
+    display: none;
+  }
+
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
 
+::-webkit-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 
 /* Works on Firefox */
 * {
@@ -66,6 +83,16 @@
   *::-webkit-scrollbar {
     width: 15px;
   }
+
+  .desk-show {
+    display: flex;
+  }
+
+  
+  .mobile-show {
+    display: none;
+  }
+
 }
 /* ipad pro screens & laptop */
 @media only screen and (min-width: 49em) and (max-width: 64em) {

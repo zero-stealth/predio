@@ -29,9 +29,9 @@ import news from '../components/news.vue'
         <news />
       </div>
     </div>
-    <!-- <div class="mobilenav-layout">
+    <div class="mobilenav-layout">
     <mobileNav />
-  </div> -->
+  </div>
   </div>
 </template>
 <style>

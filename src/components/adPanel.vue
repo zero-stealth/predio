@@ -18,3 +18,4 @@ const getApp = () => {}
 <style>
 @import '../style/adPanel.css';
 </style>
+  

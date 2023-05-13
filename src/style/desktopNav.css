@@ -4,7 +4,7 @@
     height: 60px;
     display: flex;
     padding: 0 20px;
-    font-size: 1rem;
+    font-size: .8rem;
     align-items: center;
     color: var(--light-color);
     text-transform: capitalize;
@@ -57,12 +57,13 @@
     gap: 25px;
     height: 100%;
     display: flex;
-    max-width: 50%;
+    width: 50%;
     overflow: hidden;
     overflow-x: auto;
+    padding-left: 35%;
     overflow-y: hidden;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
 }
 
@@ -85,8 +86,8 @@
 }
 
 .desk-icon {
-    width:18px;
-    height:18px;
+    width:20px;
+    height:20px;
     fill: var(--light-color);
 }
 
