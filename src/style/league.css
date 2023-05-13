@@ -27,13 +27,13 @@
   }
 
   .league-header h1 {
-    font-size: .8rem;
+    font-size: .9rem;
     text-transform: capitalize;
     color: var(--background-color);
   }
 
   .league-header span {
-    font-size: .8rem;
+    font-size: .9rem;
     cursor: pointer;
   }
 
@@ -81,7 +81,12 @@
     }
     
   .league-header span {
+    font-size: .8rem;
     display: none;
+  }
+
+  .league-header h1 {
+    font-size: .8rem;
   }
 
   .league-icon {

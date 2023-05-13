@@ -10,15 +10,15 @@
   }
 
   .m-home-container {
-    gap: 30px;
+    gap: 60px;
     width: 100%;
-    padding: 10px;
     display: flex;
+    padding: 10px 15px;
     flex-direction: column;
   }
 
   .m-home-menu {
-    padding-top: 20px;
+    padding-top: 30px;
   }
 
   .menu-icon {
@@ -106,7 +106,7 @@
   }
 
   .m-sport-link span {
-    font-size: 0.8rem;
+    font-size: .9rem;
   }
 
   .m-sport-link:hover span {
@@ -126,5 +126,7 @@
 
 /* using it as global style for larger devices  */
 @media only screen and (min-width: 48em) {
-  
+  .m-sport-link span {
+    font-size: .8rem;
+  }
 }
