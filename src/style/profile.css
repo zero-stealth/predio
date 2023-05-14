@@ -1,0 +1,55 @@
+@media screen {
+  .profile-ds {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .desk-simp {
+    display: none;
+  }
+
+  .ds-info {
+    display: none;
+  }
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .nav-simp {
+    display: none;
+  }
+
+  .ds-contain {
+    display: none;
+  }
+
+  .desk-simp {
+    display: flex;
+  }
+
+  .ds-info {
+    gap: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  
+  .ds-info h4 {
+    color: var(--background-color);
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  .ds-info span {
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: underline;
+    text-transform: capitalize;
+    color: var( --secondary-color);
+  }
+}

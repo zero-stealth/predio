@@ -1,0 +1,92 @@
+@media screen {
+  .profile-card-i {
+    height: 100%;
+  }
+
+  .profile-img-i {
+    height: 100%;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .form-ad {
+    gap: 10px;
+    display: flex;
+    padding: 10px;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .form-ia {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ia-acc {
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: var(--light-color);
+  }
+
+  .ia-input {
+    outline: none;
+    padding: 10px 10px;
+    border-radius: 4px;
+    color: var(--light-color);
+    border: 1px solid var(--light-color);
+    background-color: var(--tertiary-color);
+  }
+
+  .ia-input::placeholder {
+    color: var(--light-color);
+  }
+
+  .ia-input:hover {
+    border: 1px solid var(--secondary-color);
+  }
+
+  .error-msg {
+    padding: 2px;
+    display: flex;
+    font-size: 0.7rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: var(--secondary-color);
+  }
+
+  .btn-acc-d {
+    padding: 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 8px;
+    text-transform: capitalize;
+    color: var(--background-color);
+    background-color: var(--secondary-color);
+  }
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .profile-card-i {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile-img-i {
+    height: 50%;
+    border-radius: 12px;
+
+  }
+  .form-ad {
+    border-radius: 12px;
+    box-shadow: var(--drop-shadow);
+    background-color: var(--dark-primary-color);
+  }
+}

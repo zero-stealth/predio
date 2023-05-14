@@ -10,6 +10,7 @@
     --background-color: #ffffff;
     --dark-primary-color: #06274a;
     --light-primary-color: #113356;
+    --drop-shadow: 5px 8px 9px var(--tertiary-colo);
 
     margin: 0;
     padding: 0;

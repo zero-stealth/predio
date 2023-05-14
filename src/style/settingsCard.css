@@ -1,0 +1,67 @@
+@media screen {
+    .set-card {
+        gap: 10px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+
+    .set-card span {
+        font-weight: 400;
+        color: var(--light-color);
+    }
+
+    .container-set {
+        padding: 10px;
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        border-radius: 12px;
+        justify-content: space-between;
+        background-color: var(--dark-primary-color);
+    }
+
+    .container-set {
+        font-size: .8rem;
+        font-weight: 300;
+        text-transform: capitalize;
+        border: 2px solid var(--dark-primary-color);
+    }
+
+    .wrapper-icon-set {
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .icon-set {
+        display: flex;
+        padding: 12px;
+        align-items: center;
+        border-radius: 12px;
+        justify-content: center;
+        background-color: var(--light-primary-color);
+    }
+
+    .set-icon {
+        height: 20px;
+        width: 20px;
+        fill: var(--secondary-color);
+    }
+
+    .set-arrow {
+        height: 20px;
+        width: 20px;
+        fill: var(--secondary-color);
+    }
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+
+.container-set:hover {
+    border: 2px solid var(--light-color);
+}
+}

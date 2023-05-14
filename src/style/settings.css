@@ -1,0 +1,66 @@
+@media screen {
+  .settings-container {
+    height: 100%;
+  }
+
+  .desk-simp {
+    display: none;
+  }
+
+  .s-view-contain {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .s-view1 {
+    padding: 10px;
+  }
+  .s-view2 {
+    display: none;
+  }
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+
+  .settings-container {
+    padding: 10px;
+  }
+  
+  .desk-simp {
+    display: flex;
+  }
+
+  .s-view-contain {
+    gap: 20px;
+    height: 88%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .s-view1 {
+    flex: 40%;
+
+  }
+  .s-view2 {
+    flex: 60%;
+  }
+
+  .s-view1 {
+    display: flex;
+    border-radius: 12px;
+    flex-direction: column;
+    box-shadow: var(--drop-shadow);
+    background-color: var(--tertiary-color) ;
+  }
+  
+  .s-view2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-simp {
+    display: none;
+  }
+}
