@@ -10,7 +10,7 @@
   }
 
   .m-home-container {
-    gap: 60px;
+    gap: 50px;
     width: 100%;
     display: flex;
     padding: 10px 15px;
@@ -18,7 +18,7 @@
   }
 
   .m-home-menu {
-    padding-top: 30px;
+    padding-top: 20px;
   }
 
   .menu-icon {

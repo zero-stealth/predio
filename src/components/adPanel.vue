@@ -9,7 +9,7 @@ const getApp = () => {}
     <div class="ad-info">
       <h1>Download use our app</h1>
       <p>Get an even better experience with our mobile app 🌟</p>
-      <button @click="getApp()" class="ad-btn">Download app</button>
+      <button @click="getApp()" class="ads-btn">Download app</button>
     </div>
     <div class="ad-img" :style="{ backgroundImage: `url(${player})` }">
     </div>

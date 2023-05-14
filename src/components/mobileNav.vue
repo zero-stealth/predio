@@ -1,8 +1,8 @@
 <script setup>
 import SettingIcon from '../icons/settingsIcon.vue'
-import SearchIcon from '../icons/searchIcon.vue'
 import HomeIcon from '../icons/homeIcon.vue'
 import DateIcon from '../icons/dateIcon.vue'
+import PayIcon from '../icons/payIcon.vue'
 import HotIcon from '../icons/hotIcon.vue'
 import { RouterLink } from 'vue-router'
 </script>
@@ -17,8 +17,8 @@ import { RouterLink } from 'vue-router'
     <RouterLink :to="{ name: 'Upcoming' }" class="mobile-link">
       <DateIcon class="mobile-icon-link" />
     </RouterLink>
-    <RouterLink :to="{ name: 'Search' }" class="mobile-link">
-      <SearchIcon class="mobile-icon-link" />
+    <RouterLink :to="{ name: 'Pay' }" class="mobile-link">
+      <PayIcon class="mobile-icon-link" />
     </RouterLink>
     <RouterLink :to="{ name: 'Settings' }" class="mobile-link">
       <SettingIcon class="mobile-icon-link" />

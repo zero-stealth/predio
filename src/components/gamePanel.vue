@@ -8,8 +8,8 @@ import { useRouter } from 'vue-router'
 
 const datefilter = ref()
 const router = useRouter();
-const gameA = ref('Argentina')
-const gameB = ref('Manchester')
+const gameA = ref('Manchester')
+const gameB = ref('Argentina')
 const liked = ref(false)
 const liveTime = ref(85)
 const gameAS = ref(5)

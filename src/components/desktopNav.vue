@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import ModeIcon from '../icons/mode.vue'
 import pic from '../assets/basketball.png'
+import homeIcon from '../icons/homeIcon.vue'
 import { useAuthStore } from '../stores/auth'
 import { useThemeStore } from '../stores/theme'
 import SearchIcon from '../icons/searchIcon.vue'
@@ -24,16 +25,20 @@ const themeStore = useThemeStore()
 const username = ref('guest')
 const router = useRouter()
 
-const SearchPage = () => {
-  router.push({ name: 'Search' })
-}
-
 const SettingsPage = () => {
   router.push({ name: 'Settings' })
 }
 
 const PayPage = () => {
   router.push({ name: 'Pay' })
+}
+
+const homePage = () => {
+  router.push({ name: 'Home' })
+}
+
+const getData = () => {
+  homePage()
 }
 </script>
 <template>
@@ -49,50 +54,53 @@ const PayPage = () => {
       <span>{{ username }}</span>
     </div>
     <div class="sport-selection">
-      <div class="sport-wrapper">
+      <div class="sport-wrapper" @click="homePage()">
+        <homeIcon class="desk-icon" />
+        <span>Home</span>
+      </div>
+      <div class="sport-wrapper" @click="getData()">
         <FootballIcon class="desk-icon" />
         <span>Football</span>
       </div>
-      <div class="sport-wrapper">
+      <div class="sport-wrapper" @click="PayPage()">
+        <VipIcon class="desk-icon" />
+        <span>Vip</span>
+      </div>
+      <div class="sport-wrapper" @click="getData()">
         <badmintonIcon class="desk-icon" />
         <span>Badminton</span>
       </div>
-      <div class="sport-wrapper">
+      <div class="sport-wrapper" @click="PayPage">
+        <payIcon class="desk-icon" />
+        <span>Pay</span>
+      </div>
+      <div class="sport-wrapper" @click="getData()">
         <basketballIcon class="desk-icon" />
         <span>Basketball</span>
       </div>
-      <div class="sport-wrapper">
-        <payIcon class="desk-icon" @click="PayPage()"/>
-        <span>Pay</span>
-      </div>
-      <div class="sport-wrapper">
+      <div class="sport-wrapper" @click="getData()">
         <golfIcon class="desk-icon" />
         <span>Golf</span>
       </div>
-      <div class="sport-wrapper">
+      <div class="sport-wrapper" @click="getData()">
         <rugbyIcon class="desk-icon" />
         <span>Rugby</span>
       </div>
-      <div class="sport-wrapper">
+      <div class="sport-wrapper" @click="getData()">
         <hockeyicon class="desk-icon" />
         <span>Hockey</span>
       </div>
-      <div class="sport-wrapper">
+      <div class="sport-wrapper" @click="getData()">
         <tennisIcon class="desk-icon" />
         <span>Tennis</span>
       </div>
-      <div class="sport-wrapper">
-        <VipIcon class="desk-icon" @click="PayPage()"/>
-        <span>Vip</span>
-      </div>
-      <div class="sport-wrapper">
+      <div class="sport-wrapper" @click="getData()">
         <volleyballIcon class="desk-icon" />
         <span>Volleyball</span>
       </div>
     </div>
-    <div class="nav-selection">
-      <SearchIcon class="desk-icon" @click="SearchPage()" />
-      <SettingIcon class="desk-icon" @click="SettingsPage()" />
+    <div class="nav-selection" @click="SettingsPage()">
+      <SettingIcon class="desk-icon" />
       <div
         class="color-mode-wrapper"
         @click="themeStore.toggleTheme()"
