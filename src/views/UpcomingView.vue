@@ -4,8 +4,8 @@ import pic from '@/assets/news.png'
 import argentina from '../assets/Arg-log.png'
 import ArrowIcon from '@/icons/ArrowIcon.vue'
 import Manchester from '../assets/man-logo.png'
-import desktopNav from '@/components/desktopNav.vue'
-import mobileNav from '@/components/mobileNav.vue'
+import DesktopNav from '@/components/desktopNav.vue'
+import MobileNav from '@/components/mobileNav.vue'
 
 const router = useRouter()
 
@@ -16,7 +16,7 @@ const goBack = () => {
 <template>
   <div class="details-container">
     <div class="desknav-layout">
-      <desktopNav class="desk-show" />
+      <DesktopNav class="desk-show" />
     </div>
     <div class="details-wrapper">
       <div
@@ -113,11 +113,11 @@ const goBack = () => {
     </div>
   </div>
   <div class="mobilenav-layout">
-    <mobileNav />
+    <MobileNav />
   </div>
 </template> 
 <style>
-@import '../style/home.css';
-@import '../style/details.css';
-@import '../style/upcoming.css';
+@import '@/style/upcoming.css';
+@import '@/style/home.css';
+@import '@/style/details.css';
 </style>
