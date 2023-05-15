@@ -66,9 +66,9 @@ const router = createRouter({
       component: () => import('../views/SpecificView.vue')
     },
     {
-      path: '/Prediction',
+      path: '/prediction',
       name: 'Upcoming',
-      component: () => import('../views/Upcoming.vue')
+      component: () => import('../views/UpcomingView.vue')
     },
     {
       path: '/about',
