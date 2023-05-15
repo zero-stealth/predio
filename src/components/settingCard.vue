@@ -23,6 +23,9 @@ const Logout = () => {
 </script>
 <template>
   <div class="set-card">
+    <div class="card-title-s">
+      <h1>Settings</h1>
+    </div>
     <div class="container-set" @click="Profile()">
       <div class="wrapper-icon-set">
         <div class="icon-set">
@@ -41,7 +44,7 @@ const Logout = () => {
       </div>
       <ArrowIcon class="set-arrow" />
     </div> -->
-    <div class="container-set"  @click="Favourite()">
+    <div class="container-set" @click="Favourite()">
       <div class="wrapper-icon-set">
         <div class="icon-set">
           <FavIcon class="set-icon" />

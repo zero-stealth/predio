@@ -12,6 +12,17 @@
         color: var(--light-color);
     }
 
+    .card-title-s {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-title-s h1 {
+        padding: 10px;
+        font-weight: 400;
+        font-size: 1rem;
+    }
     .container-set {
         padding: 10px;
         display: flex;

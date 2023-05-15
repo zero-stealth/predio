@@ -22,7 +22,14 @@
     font-family: 'Poppins';
     color: var(--background-color);
     background-color: var(--primary-color);
+    transition: background-color 0.2s ease, color 0.2s ease;
   }
+
+  /* body.light-theme {
+    background-color: var(--background-color);
+    color:  var(--primary-color);
+  } */
+
 
   h1, h2 {
     font-weight: 500;
@@ -51,6 +58,8 @@
   .desk-show {
     display: none;
   }
+
+
 
 }
 

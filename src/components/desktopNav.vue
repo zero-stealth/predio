@@ -6,7 +6,6 @@ import pic from '../assets/basketball.png'
 import homeIcon from '../icons/homeIcon.vue'
 import { useAuthStore } from '../stores/auth'
 import { useThemeStore } from '../stores/theme'
-import SearchIcon from '../icons/searchIcon.vue'
 import profileIcon from '../icons/profileIcon.vue'
 import SettingIcon from '../icons/settingsIcon.vue'
 import FootballIcon from '../icons/footballIcon.vue'
@@ -25,6 +24,7 @@ const themeStore = useThemeStore()
 const username = ref('guest')
 const router = useRouter()
 
+
 const SettingsPage = () => {
   router.push({ name: 'Settings' })
 }
@@ -40,6 +40,7 @@ const homePage = () => {
 const getData = () => {
   homePage()
 }
+
 </script>
 <template>
   <div class="desk-container">
@@ -103,7 +104,7 @@ const getData = () => {
       <SettingIcon class="desk-icon" />
       <div
         class="color-mode-wrapper"
-        @click="themeStore.toggleTheme()"
+        @click="themeStore.toggleTheme() "
         :class="[themeStore.theme == 'dark' ? 'dark' : 'light']"
       >
         <div class="color-mode">
