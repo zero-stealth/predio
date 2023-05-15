@@ -117,7 +117,7 @@ const goBack = () => {
   </div>
 </template> 
 <style>
-@import '@/style/upcoming.css';
+@import '@/style/prediction.css';
 @import '@/style/home.css';
 @import '@/style/details.css';
 </style>
