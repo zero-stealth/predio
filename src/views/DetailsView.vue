@@ -1,22 +1,23 @@
 <script setup>
-import { useRouter } from 'vue-router'
-import pic from '@/assets/news.png'
-import argentina from '../assets/Arg-log.png'
-import ArrowIcon from '@/icons/ArrowIcon.vue'
-import Manchester from '../assets/man-logo.png'
-import desktopNav from '@/components/desktopNav.vue'
-import mobileNav from '@/components/mobileNav.vue'
+import { useRouter } from 'vue-router';
+import pic from '@/assets/news.png';
+import argentina from '../assets/Arg-log.png';
+import ArrowIcon from '@/icons/ArrowIcon.vue';
+import Manchester from '../assets/man-logo.png';
+import DesktopNav from '@/components/DesktopNav.vue';
+import MobileNav from '@/components/MobileNav.vue';
 
-const router = useRouter()
+const router = useRouter();
 
 const goBack = () => {
-  router.go(-1)
-}
+  router.go(-1);
+};
 </script>
+
 <template>
   <div class="details-container">
     <div class="desknav-layout">
-      <desktopNav class="desk-show" />
+      <DesktopNav class="desk-show" />
     </div>
     <div class="details-wrapper">
       <div
@@ -26,14 +27,14 @@ const goBack = () => {
         }"
       >
         <div class="details-h">
-          <ArrowIcon class="details-arrow" @click="goBack()" />
-          <h2>uefa champion</h2>
+          <ArrowIcon class="details-arrow" @click="goBack" />
+          <h2>UEFA Champion</h2>
           <span></span>
         </div>
         <div class="details-image-d">
           <div class="details-d">
             <img :src="argentina" alt="" class="details-d-img" />
-            <span>argentina</span>
+            <span>Argentina</span>
           </div>
           <div class="details-score">
             <div class="score-p">
@@ -77,9 +78,10 @@ const goBack = () => {
     </div>
   </div>
   <div class="mobilenav-layout">
-    <mobileNav />
+    <MobileNav />
   </div>
 </template>
+
 <style>
 @import '../style/home.css';
 @import '../style/details.css';

@@ -13,6 +13,7 @@ const goBack = () => {
   router.go(-1)
 }
 </script>
+
 <template>
   <div class="details-container">
     <div class="desknav-layout">
@@ -115,7 +116,8 @@ const goBack = () => {
   <div class="mobilenav-layout">
     <MobileNav />
   </div>
-</template> 
+</template>
+
 <style>
 @import '@/style/prediction.css';
 @import '@/style/home.css';

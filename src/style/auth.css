@@ -1,6 +1,6 @@
 @media screen {
   .background-layout {
-    height: 50%;
+    height: 54%;
     width: 100%;
     z-index: -1000;
     position: absolute;
@@ -10,6 +10,7 @@
 
   .flip {
     bottom: 0;
+    
   }
 
   .flop{

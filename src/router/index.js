@@ -38,9 +38,9 @@ const router = createRouter({
       path: '/vip-access',
       name: 'Vip',
       component: () => import('../views/VipView.vue')
-    },
+    },  
     {
-      path: '/live',
+      path: '/live:Id',
       name: 'Details',
       params: true,
       component: () => import('../views/DetailsView.vue')

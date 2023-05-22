@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import axios from 'axios';
 import { useRouter } from 'vue-router'
 import { useAuthStore } from '../stores/auth'
 import guestIcon from '../icons/profileIcon.vue'
@@ -21,23 +22,43 @@ const reset = () => {
   email.value = ''
 }
 
-const Login = () => {
-  if (username.value != null && password.value != null ) {
-    router.push({ name: 'Home' })
+const Login = async () => {
+  if (username.value !== null && password.value !== null) {
+    try {
+      const response = await axios.post('https://predictions-server.onrender.com/predict', {
+        username: username.value,
+        password: password.value
+      });
+      console.log(response.data); // Handle the response data as needed
+      router.push({ name: 'Home' });
+    } catch (error) {
+      console.error(error);
+    }
   } else {
-    errMsg.value = ' write something'
-    reset()
+    errMsg.value = 'Write something';
+    reset();
   }
-}
+};
 
-const ResetAuth = () => {
-  if (email.value != null && password.value != null ) {
-    authStore.resetPageState()
+
+const ResetAuth = async () => {
+  if (email.value !== null && password.value !== null) {
+    try {
+      const response = await axios.post('https://predictions-server.onrender.com/reset', {
+        email: email.value,
+        password: password.value
+      });
+      console.log(response.data); // Handle the response data as needed
+      authStore.resetPageState();
+    } catch (error) {
+      console.error(error);
+    }
   } else {
-    errMsg.value = ' write something'
-    reset()
+    errMsg.value = 'Write something';
+    reset();
   }
-}
+};
+
 
 const useFacebook = () => {}
 
@@ -77,19 +98,21 @@ const useGuest = () => {
         <span @click="authStore.resetPageState">login</span>
       </form>
     </div>
-    <h5>or</h5>
+    <span>or</span>
     <div class="l-alternatives">
       <div class="alternative" @click="useGoogle">
         <googleIcon class="alternative-icon" />
+        <span>Login with google</span>
       </div>
-      <div class="alternative" @click="useFacebook">
+      <!-- <div class="alternative" @click="useFacebook">
         <facebookIcon class="alternative-icon" />
       </div>
       <div class="alternative" @click="useTwitter">
         <twitterIcon class="alternative-icon" />
-      </div>
+      </div> -->
       <div class="alternative" @click="useGuest">
         <guestIcon class="alternative-icon" />
+        <span>Login as a guest</span>
       </div>
     </div>
   </div>

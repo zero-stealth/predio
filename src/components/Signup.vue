@@ -61,20 +61,24 @@ const useFacebook = () => {
       <p>{{ errMsg }}</p>
       <button class="btn-l" type="submit">Signup</button>
     </form>
-    <h5>or</h5>
     <div class="l-alternatives">
-        <div class="alternative" @click="useGoogle">
-            <googleIcon class="alternative-icon"/>
-        </div>
-        <div class="alternative" @click="useFacebook">
-            <facebookIcon class="alternative-icon"/>
-        </div>
-        <div class="alternative" @click="useTwitter">
-            <twitterIcon class="alternative-icon"/>
-        </div>
-        <div class="alternative" @click="useGuest">
-            <guestIcon class="alternative-icon"/>
-        </div>
+      <span>or</span>
+    <div class="l-alternatives">
+      <div class="alternative" @click="useGoogle">
+        <googleIcon class="alternative-icon" />
+        <span>Login with google</span>
+      </div>
+      <!-- <div class="alternative" @click="useFacebook">
+        <facebookIcon class="alternative-icon" />
+      </div>
+      <div class="alternative" @click="useTwitter">
+        <twitterIcon class="alternative-icon" />
+      </div> -->
+      <div class="alternative" @click="useGuest">
+        <guestIcon class="alternative-icon" />
+        <span>Login as a guest</span>
+      </div>
+    </div>
     </div>
   </div>
 </template>

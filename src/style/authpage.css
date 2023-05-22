@@ -68,11 +68,13 @@
   .alternative-icon {
     height: 26px;
     width: 26px;
-    fill: var(--secondary-color);
+    fill: var(--light-color);
   }
 
   .l-alternatives {
+    gap: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
   }
 
@@ -82,11 +84,16 @@
     justify-content: center;
     align-items: center;
     border-radius: 8px;
+    padding: 10px;
     cursor: pointer;
     display: flex;
-    height: 60px;
-    width: 60px;
+    gap: 10px;
   }
+
+  .alternative span {
+    color: var(--light-color);
+    font-weight: 300;
+  } 
 }
 /* using it as global style for larger devices  */
 @media only screen and (min-width: 48em) {

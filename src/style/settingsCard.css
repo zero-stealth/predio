@@ -37,7 +37,6 @@
         font-size: .8rem;
         font-weight: 300;
         text-transform: capitalize;
-        border: 2px solid var(--dark-primary-color);
     }
 
     .wrapper-icon-set {
@@ -73,6 +72,6 @@
 @media only screen and (min-width: 48em) {
 
 .container-set:hover {
-    border: 2px solid var(--light-color);
+    border: 1px solid var(--light-color);
 }
 }

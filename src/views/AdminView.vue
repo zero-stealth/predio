@@ -15,3 +15,4 @@ import mobileNav from '@/components/mobileNav.vue'
 <style>
 @import '../style/home.css';
 </style>
+l

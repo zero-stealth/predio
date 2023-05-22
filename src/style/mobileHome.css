@@ -85,6 +85,7 @@
     gap: 10px;
     height: 300px;
     display: flex;
+    padding: 5px 0;
     flex-wrap: wrap;
     overflow: hidden;
     overflow-y: auto;
@@ -92,21 +93,23 @@
     overflow-x: hidden;
     border-radius: 20px;
     color: var(--light-color);
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: var(--dark-primary-color);
   }
 
   .m-sport-link {
     gap: 10px;
     display: flex;
-    padding: 10px;
+    padding: 15px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+
   }
 
   .m-sport-link span {
-    font-size: .9rem;
+    font-size: 1rem;
+    
   }
 
   .m-sport-link:hover span {
@@ -118,8 +121,8 @@
   }
 
   .m-sport-icon {
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
     fill: var(--light-color);
   }
 }

@@ -2,16 +2,17 @@
 import { useRouter } from 'vue-router'
 import payIcon from '../icons/payIcon.vue'
 import VipIcon from '../icons/VipIcon.vue'
-import golfIcon from '../icons/golfIcon.vue'
+// import golfIcon from '../icons/golfIcon.vue'
 import menuIcon from '../icons/menuIcon.vue'
-import rugbyIcon from '../icons/rugbyIcon.vue'
+// import rugbyIcon from '../icons/rugbyIcon.vue'
 import { useRouteStore } from '../stores/route'
-import hockeyicon from '../icons/hockeyicon.vue'
+// import hockeyicon from '../icons/hockeyicon.vue'
 import tennisIcon from '../icons/tennisIcon.vue'
+import BaseballIcon from '../icons/baseball.vue'
 import FootballIcon from '../icons/footballIcon.vue'
-import badmintonIcon from '../icons/badmintonIcon.vue'
-import basketballIcon from '../icons/basketballIcon.vue'
-import volleyballIcon from '../icons/volleyballIcon.vue'
+// import badmintonIcon from '../icons/badmintonIcon.vue'
+ import basketballIcon from '../icons/basketballIcon.vue'
+// import volleyballIcon from '../icons/volleyballIcon.vue'
 
 import profileIcon from '../icons/profileIcon.vue'
 import { useAuthStore } from '../stores/auth'
@@ -26,6 +27,10 @@ const router = useRouter()
 
 const PayPage = () => {
   router.push({ name: 'Pay' })
+}
+
+const VipPage = () => {
+  router.push({ name: 'Vip' })
 }
 </script>
 <template>
@@ -56,14 +61,15 @@ const PayPage = () => {
         <span>Football</span>
       </div>
       <div class="m-sport-link">
-        <badmintonIcon class="m-sport-icon" />
-        <span>Badminton</span>
+        <BaseballIcon class="m-sport-icon" />
+        <span>Baseball</span>
       </div>
-      <div class="m-sport-link">
+      <!-- <div class="m-sport-link">
         <basketballIcon class="m-sport-icon" />
         <span>Basketball</span>
-      </div>
-      <div class="m-sport-link">
+      </div> -->
+       <!--
+      <div class="m-sport-link">  
         <golfIcon class="m-sport-icon" />
         <span>Golf</span>
       </div>
@@ -74,23 +80,23 @@ const PayPage = () => {
       <div class="m-sport-link">
         <hockeyicon class="m-sport-icon" />
         <span>Hockey</span>
-      </div>
+      </div> -->
       <div class="m-sport-link">
         <tennisIcon class="m-sport-icon" />
         <span>Tennis</span>
       </div>
       <div class="m-sport-link">
-        <VipIcon class="m-sport-icon" @click="PayPage()" />
+        <VipIcon class="m-sport-icon" @click="VipPage()" />
         <span>Vip plan</span>
       </div>
       <div class="m-sport-link">
         <payIcon class="m-sport-icon" @click="PayPage()" />
         <span>How to pay</span>
       </div>
-      <div class="m-sport-link">
+      <!-- <div class="m-sport-link">
         <volleyballIcon class="m-sport-icon" />
         <span>Volleyball</span>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

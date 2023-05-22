@@ -60,7 +60,7 @@
     width: 50%;
     overflow: hidden;
     overflow-x: auto;
-    padding-left: 40%;
+    /* padding-left: 5%; */
     overflow-y: hidden;
     align-items: center;
     justify-content: space-around;
@@ -105,10 +105,18 @@
     justify-content: center;
 }
 
+.set-theme-container {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+
+
 .color-mode-wrapper {
     gap: 10px;
     padding: 5px;
     display: flex;
+    cursor: pointer;
     padding-right: 10px;
     border-radius: 20px;
     align-items: center;
