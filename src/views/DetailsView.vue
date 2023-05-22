@@ -5,7 +5,7 @@ import argentina from '../assets/Arg-log.png';
 import ArrowIcon from '@/icons/ArrowIcon.vue';
 import Manchester from '../assets/man-logo.png';
 import DesktopNav from '@/components/desktopNav.vue';
-import MobileNav from '@/components/MobileNav.vue';
+import MobileNav from '@/components/mobileNav.vue';
 
 const router = useRouter();
 
