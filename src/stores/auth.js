@@ -1,39 +1,41 @@
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, watch } from 'vue'
 import { defineStore } from 'pinia'
 
 export const useAuthStore = defineStore('auth', () => {
-
+  const authCookies = ref(localStorage.getItem('auth-cookies') || '');
   const isAuthenticated = ref(false);
   const resetPage = ref(false);
   const timeOut = ref(3000);
 
-
-  //ensures that the splash screen is not displayed after login
+  // Ensures that the splash screen is not displayed after login
   onMounted(() => {
-    switch (isAuthenticated.value) {
-      case false:
-        timeOut.value = 3000;
-        break;
-      case true:
-        timeOut.value = 0;
-        break;
-      default:
-        break;
+    if (!isAuthenticated.value) {
+      timeOut.value = 3000;
+    } else {
+      timeOut.value = 0;
     }
+  });
 
-  })
+  // Watch for changes in the authCookies value
+  watch(authCookies, (newCookies) => {
+    isAuthenticated.value = newCookies !== '';
+  });
 
-  //change state
-  const toggleisAuthenticated = () => {
+  // Change the isAuthenticated state
+  const toggleIsAuthenticated = () => {
     isAuthenticated.value = !isAuthenticated.value;
-  }
+  };
 
+  // Change the resetPage state
   const resetPageState = () => {
-    resetPage.value = !resetPage.value
-  }
-
+    resetPage.value = !resetPage.value;
+  };
 
   return {
-    timeOut, isAuthenticated, toggleisAuthenticated, resetPage, resetPageState
-  }
-})
+    timeOut,
+    isAuthenticated,
+    toggleIsAuthenticated,
+    resetPage,
+    resetPageState
+  };
+});

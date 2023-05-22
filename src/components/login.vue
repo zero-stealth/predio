@@ -64,7 +64,28 @@ const useFacebook = () => {}
 
 const useTwitter = () => {}
 
-const useGoogle = () => {}
+const useGoogle = async () => {
+  const options = {
+    method: 'GET',
+    url: 'https://predictions-server.onrender.com/auth/auth/google',
+    headers: {
+      cookie: '__Host-GAPS=1%3A9SRFlwJ_n9M8FAu0PvVCuXniHqx0tA%3A7HHSV-qcCcicmftP; GEM=CgptaW51dGVtYWlkEPHa3YmEMQ%3D%3D',
+      'Content-Type': 'application/json'
+    },
+    data: { email: 'trenton691@example.org', password: 'debitis' }
+  };
+
+  try {
+    const response = await axios.request(options);
+    const cookieValue = response.headers['__Host-GAPS=1%3A9SRFlwJ_n9M8FAu0PvVCuXniHqx0tA%3A7HHSV-qcCcicmftP; GEM=CgptaW51dGVtYWlkEPHa3YmEMQ%3D%3D']; // Get the cookie value from the response headers
+    // Save the cookie value in localStorage
+    localStorage.setItem('auth-cookies', cookieValue);
+
+    console.log(response.data);
+  } catch (error) {
+    console.error(error);
+  }
+}
 
 const useGuest = () => {
   router.push({ name: 'Home' })
